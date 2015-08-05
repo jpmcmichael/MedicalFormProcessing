@@ -24,9 +24,10 @@ gs -dNOPAUSE -q -r600x600 -sDEVICE=tiffg4 -dBATCH -sOutputFile=doc1.tif ../PDF/d
 
 the 600x600 is the DPI
 
-# Use OCR
+## Use OCR
 
 tesseract doc1.tif doc1 
+
 tesseract doc1.tif doc1 hocr
 
 
