@@ -34,6 +34,12 @@ Use textcleaner as needed.  These defaults work well.
 
 ## Use OCR
 
+### Dictionary rebuild
+
+combine_tessdata -u eng.traineddata 
+wordlist2dawg fullDict.txt eng.word-dawg eng.unicharset 
+combine_tessdata -u eng.traineddata eng.
+
 I've added a large user dictionary of medical terms that will help with recognition.
 
 cp scripts/tesseract-medical-dict.txt /usr/local/Cellar/tesseract/3.02.02_3/share/tessdata/eng.user-words
